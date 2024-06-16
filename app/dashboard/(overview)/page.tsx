@@ -8,6 +8,7 @@ import {
   RevenueChartSkeleton,
   CardsSkeleton,
 } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
 
 export default async function Page() {
   return (
@@ -33,3 +34,7 @@ export default async function Page() {
 }
 
 export const dynamic = 'force-dynamic';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
